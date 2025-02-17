@@ -7,7 +7,7 @@ $("#start").click(function () {
   }
 });
 $("#stop").click(function () {
-  alert("这么作？今天别吃了！");
+  alert("这么作？TM别吃了！");
   $(this).hide();
   // $("#banner").show();
 });
