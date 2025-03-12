@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我推の角色</title>
+    <style>
+        .container{
+            display: flex;
+            /* height: 40rem; */
+            flex-direction: column;
+            background-color: yellow;
+            width: 100%;
+        }
+        .character{
+            display: inline-block;
+            font-size: 45px;
+            font-family: 'kaiti';
+
+            /* background-color: aqua; */
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    <div>月下初拥</div>
-    <img src="./月下.jpg" width="744" height="440">
-    <div>魔法少女西琳</div>
-    <img src="./西琳.jpg" width="800" height="550">
+    <div class="container">
+        <div class="character" style="background-color: red;">月下初拥</div>
+        <img src="月下.jpg" alt="" >
+        <div class="character" style="background-color: blueviolet;">魔法少女西琳</div>
+        <img src="西琳.jpg" alt="" >
+        <div class="character" style="background-color: rgb(1, 185, 185);">梦见月瑞希</div>
+        <video controls>
+            <source src = "梦见月瑞希.mp4" type="video/mp4">
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
 </body>
 </html>
