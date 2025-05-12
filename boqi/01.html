@@ -7,32 +7,80 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/book.jpg" type="image/x-icon">
     <style>
-        .jianjie{
+        /* 背景板一 */
+        .juese{
             width: 90%;
-            height: 470px;
-            margin: 40px 5%;
-            background-color: white;
+            height: 1000px;
+            margin: 30px 5%;
+            background-color: pink;
+            /* background-repeat: no-repeat; 控制背景图片不重复*/
+            /* background-size: cover;  允许背景图片覆盖整个元素的背景区域*/
+            position: relative;
             border-radius: 10px 0px 0px 0px;
-            box-shadow: 5px 5px 1px lightgray;
+            box-shadow: 5px 5px 1px lightcoral;
         }
-        /* 文本设置 */
-        .jianjie .msgs{
-            width: 50%;
+        .juese .title{
+            width: 90%;
+            height: 120px;
+            line-height: 120px;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            /* background-color: antiquewhite; */
+            margin: 0px 5%;
+        }
+        /* 背景板二 */
+        .juese2{
+            position: absolute;
+            width: 90%;
+            height: 800px;
+            background-color: white;
+            margin: 15px 5%;
+            display: flex; /*弹性盒子，可灵活控制布局*/
+            justify-content: space-between; /*子元素间隔相等*/
+        }
+        .juese2 li{
+            list-style: none;
+            width: calc(100% / 4);
+            margin: 4px .5%;
+            position: relative;
+        }
+        /* 遮罩层 */
+        .juese2 .mask{ 
+            width: 100%;
+            height: 97%;
+            background-color: rgba(0,0,0,.2);
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            line-height: 70vh;
+            font-size: 45px;
+            font-family: serif;
+            color: white;
+            opacity: 0;
+        }
+        /*小交互*/
+        .juese2 li:hover > .mask{
+            transition: all .1s; /*定义元素在不同状态之间切换时的过渡效果*/
+            cursor: pointer; /*将光标变为手形状*/
+            opacity: 1; /*不透明度:100%*/
+            font-size: 40px;
+            width: 100%;
             height: 100%;
-            float: left;
-            padding: 40px;
         }
-
-        .jianjie .msgs p{
-            font-size: 20px;
-            margin: 20px 0px;
-        }
-
-        /* 图片设置 */
-        .jianjie img{
-            width: 45%;
+        /* .juese2 li:hover > img{
+            transition: all .1s; 定义元素在不同状态之间切换时的过渡效果
+            cursor: pointer; 将光标变为手形状
+            opacity: 1; 不透明度:100%
+            width: 105%;
             height: 100%;
-            float: right;
+        } */
+        .juese2 li img{
+            transform-origin: center;
+            width: 97%;
+            height: 97%;
+            object-fit: contain; /*控制图片完全显示*/
         }
 
         .menus a:nth-child(2){
@@ -46,15 +94,15 @@
         <img src="img/book.jpg" alt="" class="logo">
         <div class="menus">
             <a href="index.html">网站主页</a>
-            <a href="01.html">展示</a>
+            <a href="01.html">角色展示</a>
             <a href="02.html">角色介绍</a>
             <a href="03.html">分集剧情</a>
             <a href="04.html">动画配乐</a>
             <a href="guanyu.html">关于我们</a>
         </div>
         <div class="logins">
-            <a href="">登录</a>
-            <a href="">注册</a>
+            <a href="login.html">登录</a>
+            <a href="regist.html">注册</a>
         </div>
     </div>
     <div class="empty-content"></div>
@@ -63,7 +111,27 @@
     
     <!-- 网站主体 -->
     <div class="main">
-        
+        <div class="juese">
+            <div class="title">角色展示柜(bushi)</div>
+            <div class="juese2">                
+                <li>
+                    <img src="img/1.jpg" alt="">
+                    <div class="mask">后藤独</div>
+                </li>
+                <li>
+                    <img src="img/4.jpg" alt="">
+                    <div class="mask">喜多郁代</div>
+                </li>
+                <li>
+                    <img src="img/2.jpg" alt="">
+                    <div class="mask">伊地知虹夏</div>
+                </li>
+                <li>
+                    <img src="img/3.jpg" alt="">
+                    <div class="mask">山田凉</div>
+                </li>
+            </div>
+        </div>
     </div>
     
 

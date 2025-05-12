@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/book.jpg" type="image/x-icon">
+    <style>
+        .login{
+            width: 40%;
+            height: 500px;
+            margin: 100px auto;
+            border-radius: 10px;
+            background-color: rgba(167, 167, 167, 0.144);
+            box-shadow: 2px 3px 3px gray;
+        }
+        .title{
+            width: 90%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0 auto;
+            border-bottom: 2px solid lightgray; /*底边界*/
+        }
+        .login input{
+            width: 90%;
+            height: 60px;
+            text-indent: 1rem;
+            font-size: 18px;
+            margin: 20px 5%;
+            border: 1px lightgray; /*边框*/
+            outline: none; /* 去掉点击时出现的黑边框 */
+            line-height: 60px;
+            border-radius: 10px;
+        }
+        .forget_password{
+            width: 92%;
+            height: 40px;
+            line-height: 40px;
+            text-align: right;
+            margin: 5px 4%;
+            /* background-color: #fee750; */
+        }
+        .login button{
+            width: 90%;
+            height: 55px;
+            line-height: 55px;
+            font-size: 23px;
+            font-weight: bold;
+            background-color: gold;
+            border: transparent;
+            border-radius: 100px;
+            margin: 30px 5%;
+        }
+        .duan{
+            width: 90%;
+            margin: 20px 5%;
+            font-weight: bold;
+            color: goldenrod;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navs">
+        <img src="img/book.jpg" alt="" class="logo">
+        <div class="menus">
+            <a href="index.html">网站主页</a>
+            <a href="01.html">角色展示</a>
+            <a href="02.html">角色介绍</a>
+            <a href="03.html">分集剧情</a>
+            <a href="04.html">动画配乐</a>
+            <a href="guanyu.html">关于我们</a>
+        </div>
+        <div class="logins">
+            <a href="login.html">登录</a>
+            <a href="regist.html">注册</a>
+        </div>
+    </div>
+    <div class="empty-content"></div>
+
+    <!-- <img src="img/gudu.jpg" alt="" class="banner"> -->
+    
+    <!-- 网站主体 -->
+    <div class="main">
+        <div class="login">
+            <div class="title">账号登录</div>
+            <input type="text" placeholder="请输入用户名">
+            <input type="text" placeholder="请输入登录密码">
+            <div class="forget_password">纳尼？忘记密码？</div>
+            <button>Guitar Hero 启动</button>
+            <div class="duan">
+                <span>手机号快捷登录</span><span>立即注册</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部版权 -->
+    <div class="footer">
+        © xxx版权所有 | 2025.4.23
+    </div>
+</body>
+</html>
